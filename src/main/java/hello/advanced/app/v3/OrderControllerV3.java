@@ -32,7 +32,5 @@ public class OrderControllerV3 {
              * 정상 흐름으로 진행하기 때문에 무조건 예외를 던져줘야한다.
              */
         }
-
-
     }
 }
