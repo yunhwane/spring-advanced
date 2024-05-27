@@ -53,4 +53,26 @@ public class TemplateMethodTest {
         logic2.execute();
     }
 
+    /**
+     * 익명 내부 클래스를 사용한 템플릿 메서드 패턴
+     */
+    @Test
+    void templateMethodV2() {
+        AbstractTemplate logic1 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("logic1");
+            }
+        };
+        logic1.execute();
+
+        AbstractTemplate logic2 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("logic2");
+            }
+        };
+        logic2.execute();
+    }
+
 }
