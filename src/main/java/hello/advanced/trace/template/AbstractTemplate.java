@@ -11,7 +11,7 @@ public abstract class AbstractTemplate<T> {
         this.logTrace = logTrace;
     }
 
-    public T execute(String message) {
+    public T execute(String message) throws InterruptedException {
 
         TraceStatus status = null;
 
@@ -28,5 +28,5 @@ public abstract class AbstractTemplate<T> {
 
     }
 
-    protected abstract T call();
+    protected abstract T call() throws InterruptedException;
 }
